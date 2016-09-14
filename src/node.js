@@ -48,13 +48,13 @@ class Node {
 	
 	swapWithParent() {
 		if (this.parent) {
-			var initialNode = this;
-			var nodeParent = this.parent;
-			var nodeLeft = this.left;
-			var nodeRight = this.right;
-			var parentLeft = this.parent.left;
-			var parentRight = this.parent.right;
-			var parentParent = this.parent.parent;
+			let initialNode = this;
+			let nodeParent = this.parent;
+			let nodeLeft = this.left;
+			let nodeRight = this.right;
+			let parentLeft = this.parent.left;
+			let parentRight = this.parent.right;
+			let parentParent = this.parent.parent;
 
 			initialNode.removeChild(nodeLeft);
 			initialNode.removeChild(nodeRight);
@@ -76,11 +76,8 @@ class Node {
 
 			nodeParent.appendChild(nodeLeft);
 			nodeParent.appendChild(nodeRight);
-			
 		}
-		
 	}
-	
 }
 
 module.exports = Node;
